@@ -16,7 +16,7 @@ import joblib
 model = joblib.load("decision_tree_model.pkl")
 '''
 # Define Streamlit app with multiple pages
-st.set_page_config(page_title="Insurance Classifier", layout="wide")
+st.set_page_config(page_title="halamansatu", layout="wide")
 '''
 # Sidebar for navigation
 page = st.sidebar.selectbox("Select a page", ["Data Description", "Prediction", "About Naive Bayes"])
