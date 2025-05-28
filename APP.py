@@ -12,17 +12,17 @@ import pandas as pd
 import joblib
 
 # Load model
-'''
-model = joblib.load("decision_tree_model.pkl")
-'''
+
+#model = joblib.load("decision_tree_model.pkl")
+
 # Define Streamlit app with multiple pages
 st.set_page_config(page_title="halamansatu", layout="wide")
-'''
+
 # Sidebar for navigation
-page = st.sidebar.selectbox("Select a page", ["Data Description", "Prediction", "About Naive Bayes"])
+#page = st.sidebar.selectbox("Select a page", ["Data Description", "Prediction", "About Naive Bayes"])
 
 # Page 1: Data Description
-if page == "Data Description":
+#if page == "Data Description":
     st.title("📊 Insurance Dataset Description")
     try:
         df = pd.read_csv("insurance_data.csv")
@@ -52,7 +52,7 @@ elif page == "Prediction":
     region_mapping = {"northeast": 0, "southeast": 1, "southwest": 2, "northwest": 3}
     region_encoded = region_mapping[region]
 
-    input_data = [[age, bmi, children, smoker_encoded, region_encoded]]
+    #input_data = [[age, bmi, children, smoker_encoded, region_encoded]]
 
     if st.button("Predict"):
         prediction = model.predict(input_data)
