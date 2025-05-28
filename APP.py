@@ -12,11 +12,12 @@ import pandas as pd
 import joblib
 
 # Load model
+'''
 model = joblib.load("decision_tree_model.pkl")
-
+'''
 # Define Streamlit app with multiple pages
 st.set_page_config(page_title="Insurance Classifier", layout="wide")
-
+'''
 # Sidebar for navigation
 page = st.sidebar.selectbox("Select a page", ["Data Description", "Prediction", "About Naive Bayes"])
 
@@ -84,7 +85,7 @@ else:
 - If you want, you can expand the "About" page into a model evaluation page with accuracy, confusion matrix, etc.
 
 ---
-
+'''
 ### 🚀 To Run the App
 
 ```bash
